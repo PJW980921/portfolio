@@ -55,8 +55,11 @@ const NavButton = ({ x, y, label, link, icon, newTab }: NavButtonProps) => {
         className="text-foreground rounded-full flex items-center justify-center text-black bg-background/20 border border-black border-solid backdrop-blur-[6px] hover:shadow-xl  hover:shadow-gray-400"
         aria-label={label}
       >
-        <span className="relative w-14 h-14 p-4 animate-spin-slow-reverse text-black group-hover:pause">
+        <span className="relative peer w-14 h-14 p-4 animate-spin-slow-reverse text-black group-hover:animate-">
           {getIcon(icon)}
+        </span>
+        <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-black text-sm rounded-md shadow-lg whitespace-nowrap">
+          {label}
         </span>
       </Link>
     </div>
