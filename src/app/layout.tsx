@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'PJW PortFolio',
   description: 'PJW980921 Web PortFolio. ',
   icons: {
-    icon: './favicon.ico',
+    icon: '../../public/favicon.ico',
   },
 };
 
