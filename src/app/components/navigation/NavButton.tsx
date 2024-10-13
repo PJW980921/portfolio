@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 import {
   Folder,
@@ -52,14 +51,15 @@ const NavButton = ({ x, y, label, link, icon, newTab }: NavButtonProps) => {
       <Link
         href={link}
         target={newTab ? '_blank' : '_self'}
-        className="text-foreground rounded-full flex items-center justify-center text-black bg-background/20 border border-black border-solid backdrop-blur-[6px] hover:shadow-xl  hover:shadow-gray-400"
+        className="group text-foreground rounded-full flex items-center justify-center text-black bg-background/20 border border-black border-solid backdrop-blur-[6px] hover:shadow-xl  hover:shadow-gray-400"
         aria-label={label}
       >
-        <span className="relative peer w-14 h-14 p-4 animate-spin-slow-reverse text-black group-hover:animate-">
+        <span className="relative  w-14 h-14 p-4  text-black animate-spin-slow-reverse group-hover:pause group-hover:text-accent">
           {getIcon(icon)}
-        </span>
-        <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-black text-sm rounded-md shadow-lg whitespace-nowrap">
-          {label}
+          <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
+          <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-black text-sm rounded-md shadow-lg whitespace-nowrap">
+            {label}
+          </span>
         </span>
       </Link>
     </div>
