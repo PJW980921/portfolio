@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import CareerHopes from '../../../public/images/박지원 고등학교 진로희망사항.png';
-import BlurFade from '../components/ui/blur-fade';
+import CareerHopes from '../../../../public/images/박지원 고등학교 진로희망사항.png';
+import BlurFade from '../../components/ui/blur-fade';
 export default function About() {
   return (
-    <main className="w-full h-full px-[24px] flex flex-col justify-center items-center gap-8 bg-white translate-y-12">
+    <main className="h-full flex flex-col justify-center items-center gap-8 bg-white translate-y-12">
       <section className="flex justify-center items-center flex-col ">
         <BlurFade delay={0.25} inView>
           <h3 className="font-bmHannaPro text-[42px] text-black ">어바웃 미</h3>
