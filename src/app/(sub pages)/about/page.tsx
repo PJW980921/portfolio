@@ -74,9 +74,11 @@ export default function About() {
         <BlurFade delay={0.25 * 3} inView>
           <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
-              이러한 개발자가 되고싶습니다
+              향후 이러한 개발자가 되고싶습니다
             </p>
-            <b>누군가의 멘토가 되고싶습니다</b>
+            <b>누군가의 멘토 개발자가 되고싶습니다</b>
+            <br />
+            실무 경험을 기반으로 근거 있는 개발자가 되고
             <br />
             현재 저와 같은 신입 개발자에게 조금이나마 도움이 되고자 하는 멘토가
             되고싶습니다.
@@ -86,10 +88,10 @@ export default function About() {
             <br />
             고민을 경청하고 해결방안을 모색하는 과정에서 뿌듯함을 느꼈습니다.
             <br />
-            이 과정도 의사소통능력 향상에 도움이 된다고 생각합니다.
+            이 과정을 통해 의사소통능력 향상에 도움이 된다고 생각합니다.
             <br />
             개발자로서 소프트 스킬 중 의사소통능력 향상이 되는 일이라면 무엇이든
-            경험하고 싶습니다.
+            도전하고 경험하고 싶습니다.
             <br />
             <br />
             <br />
