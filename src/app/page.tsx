@@ -1,3 +1,4 @@
+import Ripple from '@/app/components/ui/ripple';
 import { PjwCharacter } from './components/models';
 import Navigation from './components/navigation';
 import RenderModel from './components/RenderModel';
@@ -10,6 +11,7 @@ export default function Home() {
         <RenderModel className="">
           <PjwCharacter />
         </RenderModel>
+        <Ripple />
       </div>
     </div>
   );
