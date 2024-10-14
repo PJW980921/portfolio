@@ -44,7 +44,7 @@ export default function About() {
         </BlurFade>
       </section>
       <section className="mb-32">
-        <BlurFade inView>
+        <BlurFade delay={0.25 * 3} inView>
           <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               저는 이렇게 개발을 진행하고 있습니다
@@ -71,7 +71,7 @@ export default function About() {
         </BlurFade>
       </section>
       <section>
-        <BlurFade inView>
+        <BlurFade delay={0.25 * 3} inView>
           <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               이러한 개발자가 되고싶습니다
