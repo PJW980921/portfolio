@@ -5,19 +5,19 @@ import BlurFade from '../components/ui/blur-fade';
 export default function About() {
   return (
     <main className="w-full h-full px-[24px] flex flex-col justify-center items-center gap-8 bg-white translate-y-12">
-      <section className="flex justify-center items-center  flex-col w-[40rem] ">
+      <section className="flex justify-center items-center flex-col ">
         <BlurFade delay={0.25} inView>
-          <h3 className="font-bmHannaPro text-[42px] text-black">어바웃 미</h3>
+          <h3 className="font-bmHannaPro text-[42px] text-black ">어바웃 미</h3>
         </BlurFade>
-        <BlurFade delay={0.25 * 3} inView className="text-black break-all">
-          <div className=" max-w-[780px] font-bmHannaAir text-[16px] text-center mb-32 ">
+        <BlurFade delay={0.25 * 3} inView>
+          <div className=" font-bmHannaAir text-[16px] text-center mb-32 ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               안녕하세요, 프론트엔드 개발자 박지원입니다.
             </p>
             <Image
               src={CareerHopes}
               alt="CareerHopes image"
-              className="max-w-full"
+              className="w-full h-auto"
             />
             저는 초등학생 때 <em>VisualBasic</em>이라는 프로그래밍 툴로
             <br />
@@ -33,9 +33,9 @@ export default function About() {
             되었습니다.
             <br />
             프론트엔드는 기술 역량을 발휘하여 제 생각대로 웹 페이지를 구성할 수
-            있는 점에 매료되어
+            있는 점에
             <br />
-            프론트엔드 관련 학원을 찾아보게 되었습니다.
+            매료되어 프론트엔드 관련 학원을 찾아보게 되었습니다.
             <br />
             현재는 프론트엔드 부트캠프 수료 후
             <br />
@@ -45,7 +45,7 @@ export default function About() {
       </section>
       <section className="mb-32">
         <BlurFade inView>
-          <div className=" max-w-[780px] font-bmHannaAir text-[16px] text-center ">
+          <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               저는 이렇게 개발을 진행하고 있습니다
             </p>
@@ -72,7 +72,7 @@ export default function About() {
       </section>
       <section>
         <BlurFade inView>
-          <div className=" max-w-[780px] font-bmHannaAir text-[16px] text-center ">
+          <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               이러한 개발자가 되고싶습니다
             </p>
