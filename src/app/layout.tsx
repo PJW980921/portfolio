@@ -13,6 +13,21 @@ const geistMono = localFont({
   weight: '100 900',
 });
 
+const bmEuljiro = localFont({
+  src: './fonts/BMEuljiro10yearslaterOTF.woff',
+  display: 'swap',
+  variable: '--font-bm-euljiro',
+});
+const bmHannaAir = localFont({
+  src: './fonts/BMHANNAAir_ttf.woff',
+  display: 'swap',
+  variable: '--font-bm-hanna_air',
+});
+const bmHannaPro = localFont({
+  src: './fonts/BMHANNAPro.woff',
+  display: 'swap',
+  variable: '--font-bm-hanna_pro',
+});
 export const metadata: Metadata = {
   title: 'PJW PortFolio',
   description: 'PJW980921 Web PortFolio. ',
@@ -29,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bmEuljiro.variable} ${bmHannaAir.variable} ${bmHannaPro.variable} ${geistSans.variable} ${geistMono.variable}   antialiased`}
       >
         {children}
       </body>
