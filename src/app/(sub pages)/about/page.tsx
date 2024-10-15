@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import CareerHopes from '../../../../public/images/박지원 고등학교 진로희망사항.png';
+import CareerHopesImage from '../../../../public/images/career-hopes.png';
+import CodeReviewImage from '../../../../public/images/code-review.png';
+import SelfieImage from '../../../../public/images/selfie.png';
 import BlurFade from '../../components/ui/blur-fade';
 export default function About() {
   return (
@@ -8,12 +10,12 @@ export default function About() {
       <section className="flex justify-center items-center flex-col mb-16 ">
         <BlurFade delay={0.25} inView>
           <div className=" font-bmHannaAir text-[16px] text-center">
-            <h3 className="font-bmEuljiro text-[28px]">About</h3>
+            <h3 className="font-bmEuljiro text-[38px] mb-8">About</h3>
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               안녕하세요, 프론트엔드 개발자 박지원입니다.
             </p>
             <Image
-              src={CareerHopes}
+              src={CareerHopesImage}
               alt="CareerHopes image"
               className="w-full h-auto"
             />
@@ -48,34 +50,46 @@ export default function About() {
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               저는 이렇게 개발을 진행하고 있습니다
             </p>
-            <b>클린코드가 무엇인지 알고있으며, 클린코드를 지향하고 있습니다.</b>
+            <Image
+              src={CodeReviewImage}
+              alt="CodeReview Image"
+              className="w-[35rem] h-auto"
+            />
+            <b>클린코드의 개념을 적극 반영 하고자 합니다</b>
             <br />
-            명확한 변수, 함수명을 명명하고 단일 책임 원칙 등 클린코드의 개념에
-            대해
+            저는 클린 코드를 지향하며, 명확한 변수와 함수명을 사용하고
             <br />
-            인지한 상태로 개발에 임하고있습니다.
+            단일 책임 원칙을 준수하는 등 클린 코드의 개념을 개발에 적극 반영하고
+            있습니다.
             <br />
             <b>유연한 개발자가 되고자 여러 협업프로젝트에 참여하고 있습니다.</b>
             <br />
             기술역량 및 소통능력 향상을 위해 주도적인 학습과 협업 프로젝트에
             참여중입니다.
             <br />
-            <b>개발을하면서 체계적인 프로젝트 관리를 선호하고 있습니다.</b>
+            <b>개발을하면서 체계적인 프로젝트 관리를 지향하고 있습니다.</b>
             <br />
-            Github에서 제공하는 issue , PR Template 및 Project Board를
+            프로젝트를 진행할 때는 체계적인 관리를 중요하게 생각합니다.
             <br />
-            적절히 활용하면서 체계적인 프로젝트 관리를 하고있습니다.
+            이를 위해 Github의 Issue, PR Template, Project Board를
             <br />
+            적절히 활용하며,코드 리뷰 문화를 통해 품질을 지속적으로 개선하고자
+            합니다.
           </div>
         </BlurFade>
       </section>
       <hr className="w-full" />
       <section className="mt-16">
         <BlurFade delay={0.25} inView>
-          <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
+          <div className="flex justify-center items-center flex-col max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               향후 이러한 개발자가 되고싶습니다
             </p>
+            <Image
+              src={SelfieImage}
+              alt="Selfie"
+              className="w-[10rem] h-auto"
+            />
             <b>누군가의 멘토 개발자가 되고싶습니다</b>
             <br />
             실무 경험을 기반으로 근거 있는 개발자가 되고
