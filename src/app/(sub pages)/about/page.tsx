@@ -5,12 +5,10 @@ import BlurFade from '../../components/ui/blur-fade';
 export default function About() {
   return (
     <main className="h-full flex flex-col justify-center items-center gap-8 bg-white translate-y-12">
-      <section className="flex justify-center items-center flex-col ">
+      <section className="flex justify-center items-center flex-col mb-16 ">
         <BlurFade delay={0.25} inView>
-          <h3 className="font-bmHannaPro text-[42px] text-black ">어바웃 미</h3>
-        </BlurFade>
-        <BlurFade delay={0.25 * 3} inView>
-          <div className=" font-bmHannaAir text-[16px] text-center mb-32 ">
+          <div className=" font-bmHannaAir text-[16px] text-center">
+            <h3 className="font-bmEuljiro text-[28px]">About</h3>
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               안녕하세요, 프론트엔드 개발자 박지원입니다.
             </p>
@@ -43,8 +41,9 @@ export default function About() {
           </div>
         </BlurFade>
       </section>
-      <section className="mb-32">
-        <BlurFade delay={0.25 * 3} inView>
+      <hr className="w-full" />
+      <section className="mt-16 mb-16">
+        <BlurFade delay={0.25} inView>
           <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               저는 이렇게 개발을 진행하고 있습니다
@@ -70,8 +69,9 @@ export default function About() {
           </div>
         </BlurFade>
       </section>
-      <section>
-        <BlurFade delay={0.25 * 3} inView>
+      <hr className="w-full" />
+      <section className="mt-16">
+        <BlurFade delay={0.25} inView>
           <div className="max-w-[780px] font-bmHannaAir text-[16px] text-center ">
             <p className="font-bmHannaAir text-[20px] font-bold text-center pb-8 ">
               향후 이러한 개발자가 되고싶습니다
