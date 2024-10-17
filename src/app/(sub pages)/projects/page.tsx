@@ -61,10 +61,10 @@ interface ProjectSectionProps {
 const ProjectSection = ({ project, title }: ProjectSectionProps) => (
   <section className="flex flex-col justify-center items-center ">
     <BlurFade delay={0.25} inView className="flex flex-col justify-center">
-      <h3 className="font-bmEuljiro text-[38px] sm:text-[24px] md:text-[32px] pb-20 sm:pb-6  md:pb-16 text-center">
+      <h3 className="font-bmEuljiro text-[38px] sm:text-[24px] md:text-[32px] pb-16 sm:hidden text-center">
         {title}
       </h3>
-      <div className="flex w-[82vw] h-[57.5vh] gap-8 sm:gap-4 md:gap-6 justify-center items-center sm:flex-col">
+      <div className="flex w-[82vw] h-auto sm:h-[37.5vh] gap-8 sm:gap-4 md:gap-6 justify-center items-center sm:flex-col">
         <div className="flex w-[50%] sm:w-[70%]  h-auto">
           <Image
             src={project.src}
