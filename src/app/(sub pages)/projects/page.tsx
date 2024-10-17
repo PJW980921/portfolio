@@ -1,29 +1,105 @@
+import React from 'react';
 import { FullPageScroll } from '@/app/components/FullPageScrollLayout';
 import BlurFade from '@/app/components/ui/blur-fade';
+import { projectList, ProjectType } from '@/app/data';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
-export default function Projects() {
+interface LinkProps {
+  url: string;
+  ariaLabel: string;
+  icon: StaticImageData;
+  alt: string;
+}
+
+interface SkillsProps {
+  id: number;
+  icon: StaticImageData;
+  alt: string;
+}
+
+const ProjectLinks = ({ links }: { links: LinkProps[] }) => (
+  <div className="flex flex-row gap-3 sm:gap-2 md:gap-3 sm:justify-center sm:items-center">
+    <h3 className="flex items-center font-bmEuljiro text-lg sm:text-sm md:text-lg">
+      Links
+    </h3>
+    {links.map((link, index) => (
+      <Link
+        key={index}
+        href={link.url}
+        aria-label={link.ariaLabel}
+        target="_blank"
+        className="w-[3.8rem] sm:w-[2rem] md:w-[3.2rem] h-auto hover:scale-125 transition-all"
+      >
+        <Image src={link.icon} alt={link.alt} />
+      </Link>
+    ))}
+  </div>
+);
+
+const TechStack = ({ skills }: { skills: SkillsProps[] }) => (
+  <div className="flex flex-row gap-3 sm:gap-2 md:gap-3 pb-4  sm:justify-center sm:items-center">
+    <h3 className="flex items-center font-bmEuljiro text-lg sm:text-sm md:text-lg">
+      Tech Stack
+    </h3>
+    {skills.map((skill) => (
+      <Image
+        key={skill.id}
+        src={skill.icon}
+        alt={skill.alt}
+        className="w-[3.8rem] sm:w-[2rem] md:w-[3.2rem] h-auto"
+      />
+    ))}
+  </div>
+);
+
+interface ProjectSectionProps {
+  project: ProjectType;
+  title: string;
+}
+
+const ProjectSection = ({ project, title }: ProjectSectionProps) => (
+  <section className="flex flex-col justify-center items-center ">
+    <BlurFade delay={0.25} inView className="flex flex-col justify-center">
+      <h3 className="font-bmEuljiro text-[38px] sm:text-[24px] md:text-[32px] pb-20 sm:pb-4  md:pb-16 text-center">
+        {title}
+      </h3>
+      <div className="flex w-[82vw] h-[57.5vh] gap-8 sm:gap-4 md:gap-6 justify-center items-center sm:flex-col">
+        <div className="flex w-[50%] sm:w-[70%]  h-auto">
+          <Image
+            src={project.src}
+            alt={project.alt}
+            className="w-full border-gray-300 border-solid rounded-[5rem] sm:rounded-[2rem] md:rounded-[4rem] border-[0.1rem]"
+          />
+        </div>
+        <div className="flex flex-col justify-center sm:w-full sm:text-center">
+          <div className="font-bmHannaAir text-[16px] sm:text-[7px] md:text-[15px] pb-6">
+            <p className="font-bmHannaPro text-[1.5rem] sm:text-[0.8rem] md:text-[1.4rem] text-gray-500 mb-4">
+              {project.title}
+            </p>
+            <p className="text-gray-500 mb-4">{project.duration}</p>
+            <p className="whitespace-pre-line">{project.description}</p>
+          </div>
+          <TechStack skills={project.skills} />
+          <ProjectLinks links={project.links} />
+        </div>
+      </div>
+    </BlurFade>
+  </section>
+);
+
+const Projects = () => {
   return (
     <FullPageScroll>
-      <section className="flex flex-col justify-center items-center">
-        <BlurFade
-          delay={0.25}
-          inView
-          className="flex flex-col justify-center items-center"
-        >
-          <h3 className="font-bmEuljiro text-[38px] pb-20">Projects</h3>
-          <h3 className="font-bmEuljiro text-[28px]">PJW WEB PortFolio</h3>
-        </BlurFade>
-      </section>
-      <section className="flex flex-col justify-center items-center">
-        <BlurFade delay={0.25} inView>
-          <h3 className="font-bmEuljiro text-[38px]">EmotionalCore</h3>
-        </BlurFade>
-      </section>
-      <section className="flex flex-col justify-center items-center gap-8   ">
-        <BlurFade delay={0.25} inView>
-          <h3 className="font-bmEuljiro text-[38px]">Taskify</h3>
-        </BlurFade>
-      </section>
+      {projectList.map((project) => (
+        <ProjectSection
+          key={project.id}
+          project={project}
+          title={project.name}
+        />
+      ))}
     </FullPageScroll>
   );
-}
+};
+
+export default Projects;
