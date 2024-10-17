@@ -6,7 +6,7 @@ import {
   Instagram,
   Linkedin,
   NotebookText,
-  Phone,
+  Info,
   User,
 } from 'lucide-react';
 import React from 'react';
@@ -28,8 +28,8 @@ const getIcon = (icon: string) => {
       return <User className="w-full h-auto" strokeWidth={1.5} />;
     case 'projects':
       return <Folder className="w-full h-auto" strokeWidth={1.5} />;
-    case 'contact':
-      return <Phone className="w-full h-auto" strokeWidth={1.5} />;
+    case 'information':
+      return <Info className="w-full h-auto" strokeWidth={1.5} />;
     case 'github':
       return <Github className="w-full h-auto" strokeWidth={1.5} />;
     case 'linkedin':
