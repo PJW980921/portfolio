@@ -22,6 +22,7 @@ export const navigationList = [
   { label: 'Home', link: '/', icon: 'home', newTab: false },
   { label: 'About', link: '/about', icon: 'about', newTab: false },
   { label: 'Projects', link: '/projects', icon: 'projects', newTab: false },
+  { label: 'Career', link: '/career', icon: 'career', newTab: false },
   {
     label: 'Information',
     link: '/information',
@@ -34,7 +35,6 @@ export const navigationList = [
     icon: 'github',
     newTab: true,
   },
-  { label: 'Resume', link: '/resume.pdf', icon: 'resume', newTab: true },
   {
     label: 'Linkedin',
     link: 'https://www.linkedin.com/in/pjw980921/',

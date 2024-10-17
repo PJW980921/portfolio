@@ -88,7 +88,7 @@ const ProjectSection = ({ project, title }: ProjectSectionProps) => (
   </section>
 );
 
-const Projects = () => {
+export default function Projects() {
   return (
     <FullPageScroll>
       {projectList.map((project) => (
@@ -100,6 +100,4 @@ const Projects = () => {
       ))}
     </FullPageScroll>
   );
-};
-
-export default Projects;
+}

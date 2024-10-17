@@ -5,9 +5,9 @@ import {
   Home,
   Instagram,
   Linkedin,
-  NotebookText,
   Info,
   User,
+  BriefcaseBusinessIcon,
 } from 'lucide-react';
 import React from 'react';
 
@@ -36,8 +36,10 @@ const getIcon = (icon: string) => {
       return <Linkedin className="w-full h-auto" strokeWidth={1.5} />;
     case 'instagram':
       return <Instagram className="w-full h-auto" strokeWidth={1.5} />;
-    case 'resume':
-      return <NotebookText className="w-full h-auto" strokeWidth={1.5} />;
+    case 'career':
+      return (
+        <BriefcaseBusinessIcon className="w-full h-auto" strokeWidth={1.5} />
+      );
     default:
       return <Home className="w-full h-auto" strokeWidth={1.5} />;
   }
