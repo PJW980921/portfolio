@@ -61,7 +61,7 @@ interface ProjectSectionProps {
 const ProjectSection = ({ project, title }: ProjectSectionProps) => (
   <section className="flex flex-col justify-center items-center ">
     <BlurFade delay={0.25} inView className="flex flex-col justify-center">
-      <h3 className="font-bmEuljiro text-[38px] sm:text-[24px] md:text-[32px] pb-20 sm:pb-4  md:pb-16 text-center">
+      <h3 className="font-bmEuljiro text-[38px] sm:text-[24px] md:text-[32px] pb-20 sm:pb-6  md:pb-16 text-center">
         {title}
       </h3>
       <div className="flex w-[82vw] h-[57.5vh] gap-8 sm:gap-4 md:gap-6 justify-center items-center sm:flex-col">
@@ -69,11 +69,11 @@ const ProjectSection = ({ project, title }: ProjectSectionProps) => (
           <Image
             src={project.src}
             alt={project.alt}
-            className="w-full border-gray-300 border-solid rounded-[5rem] sm:rounded-[2rem] md:rounded-[4rem] border-[0.1rem]"
+            className="w-full h-[30rem] sm:h-auto md:h-[25rem] border-gray-300 border-solid rounded-[5rem] sm:rounded-[2rem] md:rounded-[4rem] border-[0.1rem]"
           />
         </div>
         <div className="flex flex-col justify-center sm:w-full sm:text-center">
-          <div className="font-bmHannaAir text-[16px] sm:text-[7px] md:text-[15px] pb-6">
+          <div className="font-bmHannaAir text-[16px] sm:text-[9px] md:text-[15px] pb-6">
             <p className="font-bmHannaPro text-[1.5rem] sm:text-[0.8rem] md:text-[1.4rem] text-gray-500 mb-4">
               {project.title}
             </p>

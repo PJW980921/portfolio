@@ -32,7 +32,10 @@ export const FullPageScroll: React.FC<FullPageScrollProps> = ({
     <section className="relative h-screen w-full overflow-hidden">
       <div ref={scrollContainerRef} className="h-full w-full">
         {React.Children.map(children, (child, index) => (
-          <div key={index} className="h-full w-full">
+          <div
+            key={index}
+            className="flex items-center justify-center h-full w-full"
+          >
             {child}
           </div>
         ))}
