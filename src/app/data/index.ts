@@ -1,9 +1,10 @@
 import EmotionalCore from '../../../public/images/project-emotional-core.png';
 import PortFolio from '../../../public/images/project-portfolio.png';
 import Taskify from '../../../public/images/project-taskify.png';
+import PjwSippet from '../../../public/images/project-snippet.png';
 // import HtmlIcon from '../../../public/images/svgs/HTML.svg';
 // import CSSIcon from '../../../public/images/svgs/CSS.svg';
-// import JavaScriptIcon from '../../../public/images/svgs/JavaScript.svg';
+import JavaScriptIcon from '../../../public/images/svgs/JavaScript.svg';
 import TypeScriptIcon from '../../../public/images/svgs/TypeScript.svg';
 import ReactIcon from '../../../public/images/svgs/React.svg';
 import NextJsIcon from '../../../public/images/svgs/Nextjs.svg';
@@ -15,7 +16,7 @@ import AxiosIcon from '../../../public/images/svgs/Axios.svg';
 import GitHubIcon from '../../../public/images/svgs/GitHub.svg';
 import VercelIcon from '../../../public/images/svgs/Vercel.svg';
 import { StaticImageData } from 'next/image';
-// import VscodeIcon from '../../../public/images/svgs/Vscode.svg';
+import VscodeIcon from '../../../public/images/svgs/Vscode.svg';
 import LinkIcon from '../../../public/images/svgs/Link.svg';
 
 export const navigationList = [
@@ -108,6 +109,30 @@ Next.js를 택하고 개발을 진행 했습니다.
   },
   {
     id: 1,
+    name: 'pjw-snippets',
+    title: 'pjw-snippets - React snippet Extension',
+    duration: '2024/07',
+    description: `TypeScript 및 JavaScript를 위한 React 스니펫 모음 익스텐션입니다.
+    프로젝트 개발을 진행하면서 개발 생산성 향상 및 저만의 익스텐션을 개발 하고자 기획하게 되었습니다. 
+    함수형 컴포넌트와 기타 유용한 스니펫을 포함하고 있습니다.`,
+    src: PjwSippet,
+    alt: 'JiWonPark Project pjw-snippets Extension Image',
+    skills: [
+      { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
+      { id: 1, icon: JavaScriptIcon, alt: 'JavaScript Icon' },
+      { id: 2, icon: VscodeIcon, alt: 'Vscode Icon' },
+    ],
+    links: [
+      {
+        url: 'https://github.com/PJW980921/pjw-snippets',
+        ariaLabel: 'pjw-sippets Extension Github Link',
+        icon: GitHubIcon,
+        alt: 'GitHub Icon',
+      },
+    ],
+  },
+  {
+    id: 2,
     name: 'Taskify',
     title: 'Taskify - 모달 기반 일정 관리 플랫폼',
     duration: '2024/01 ~ 2024/02',
@@ -140,7 +165,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: 'EmotionalCore',
     title: '감성코어(EmotionalCore) - 시 및 웹 소설 플랫폼',
     duration: '2024/10 ~ 진행중',
