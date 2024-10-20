@@ -29,7 +29,7 @@ const ProjectLinks = ({ links }: { links: LinkProps[] }) => (
         href={link.url}
         aria-label={link.ariaLabel}
         target="_blank"
-        className="w-[3.8rem] sm:w-[2rem] md:w-[3.2rem] h-auto hover:scale-125 transition-all"
+        className="w-[3rem] sm:w-[2rem] md:w-[2.5rem] h-auto hover:scale-125 transition-all"
       >
         <Image src={link.icon} alt={link.alt} />
       </Link>
@@ -47,7 +47,7 @@ const TechStack = ({ skills }: { skills: SkillsProps[] }) => (
         key={skill.id}
         src={skill.icon}
         alt={skill.alt}
-        className="w-[3.8rem] sm:w-[2rem] md:w-[3.2rem] h-auto"
+        className="w-[3rem] sm:w-[2rem] md:w-[2.5rem] h-auto"
       />
     ))}
   </div>
