@@ -214,32 +214,62 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
 
 // ----------------------------------------------------------------------
 
+export interface Skill {
+  id: number;
+  src: string | StaticImageData;
+  alt: string;
+}
+
+export type SkillCategoryType = {
+  [key: string]: Skill[];
+};
+
+export interface InformationList {
+  info: {
+    id: number;
+    profile: { src: string | StaticImageData; alt: string };
+    name: string;
+    phone: string;
+    email: string;
+    github: string;
+  }[];
+  skills: SkillCategoryType;
+}
+
 export const informationList = {
   info: [
     {
-      profile: { src: Profile, alit: 'profile' },
+      id: 0,
+      profile: { src: Profile, alt: 'profile' },
       name: '박지원',
       phone: '010-2411-1644',
       email: 'jackgg12322@gmail.com',
-      github: 'https://github.com/PJW980921/',
+      github: 'https://github.com/PJW980921',
     },
   ],
-  skills: [
-    [
+  skills: {
+    Frontend: [
       { id: 0, src: HtmlIcon, alt: 'HtmlIcon' },
       { id: 1, src: CSSIcon, alt: 'CSSIcon' },
       { id: 2, src: JavaScriptIcon, alt: 'JavaScriptIcon' },
       { id: 3, src: TypeScriptIcon, alt: 'TypeScriptIcon' },
       { id: 4, src: ReactIcon, alt: 'ReactIcon' },
       { id: 5, src: NextJsIcon, alt: 'NextJsIcon' },
-      { id: 6, src: ReactQueryIcon, alt: 'ReactQueryIcon' },
-      { id: 7, src: SASSIcon, alt: 'SASSIcon' },
-      { id: 8, src: TailwindIcon, alt: 'TailwindIcon' },
-      { id: 9, src: StyledComponentsIcon, alt: 'StyledComponentsIcon' },
-      { id: 10, src: GitHubIcon, alt: 'GitHubIcon' },
-      { id: 11, src: GitIcon, alt: 'GitIcon' },
-      { id: 12, src: VercelIcon, alt: 'VercelIcon' },
-      { id: 13, src: NetlifyIcon, alt: 'NetlifyIcon' },
     ],
-  ],
+    Styling: [
+      { id: 6, src: SASSIcon, alt: 'SASSIcon' },
+      { id: 7, src: TailwindIcon, alt: 'TailwindIcon' },
+      { id: 8, src: StyledComponentsIcon, alt: 'Styled\nComponentsIcon' },
+    ],
+    Libraries: [
+      { id: 9, src: ReactQueryIcon, alt: 'React\nQueryIcon' },
+      { id: 10, src: ReactHookFormIcon, alt: 'ReactHook\nFormIcon' },
+    ],
+    'CI/CD': [
+      { id: 11, src: GitHubIcon, alt: 'GitHubIcon' },
+      { id: 12, src: GitIcon, alt: 'GitIcon' },
+      { id: 13, src: VercelIcon, alt: 'VercelIcon' },
+      { id: 14, src: NetlifyIcon, alt: 'NetlifyIcon' },
+    ],
+  },
 };
