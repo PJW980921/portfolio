@@ -21,7 +21,7 @@ import VercelIcon from '../../../public/images/svgs/Vercel.svg';
 import NetlifyIcon from '../../../public/images/svgs/NetlifyDark.svg';
 import VscodeIcon from '../../../public/images/svgs/Vscode.svg';
 import LinkIcon from '../../../public/images/svgs/Link.svg';
-import Profile from '../../../public/images/Profile.png';
+import Profile from '../../../public/images/profile.png';
 import { StaticImageData } from 'next/image';
 
 export const navigationList = [
