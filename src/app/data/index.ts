@@ -21,6 +21,7 @@ import VercelIcon from '../../../public/images/svgs/Vercel.svg';
 import NetlifyIcon from '../../../public/images/svgs/NetlifyDark.svg';
 import VscodeIcon from '../../../public/images/svgs/Vscode.svg';
 import LinkIcon from '../../../public/images/svgs/Link.svg';
+import Profile from '../../../public/images/Profile.png';
 import { StaticImageData } from 'next/image';
 
 export const navigationList = [
@@ -216,6 +217,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
 export const informationList = {
   info: [
     {
+      profile: { src: Profile, alit: 'profile' },
       name: '박지원',
       phone: '010-2411-1644',
       email: 'jackgg12322@gmail.com',
