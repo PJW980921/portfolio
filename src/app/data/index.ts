@@ -2,22 +2,26 @@ import EmotionalCore from '../../../public/images/project-emotional-core.png';
 import PortFolio from '../../../public/images/project-portfolio.png';
 import Taskify from '../../../public/images/project-taskify.png';
 import PjwSippet from '../../../public/images/project-snippet.png';
-// import HtmlIcon from '../../../public/images/svgs/HTML.svg';
-// import CSSIcon from '../../../public/images/svgs/CSS.svg';
+import HtmlIcon from '../../../public/images/svgs/HTML.svg';
+import CSSIcon from '../../../public/images/svgs/CSS.svg';
 import JavaScriptIcon from '../../../public/images/svgs/JavaScript.svg';
 import TypeScriptIcon from '../../../public/images/svgs/TypeScript.svg';
 import ReactIcon from '../../../public/images/svgs/React.svg';
 import NextJsIcon from '../../../public/images/svgs/Nextjs.svg';
 import ThreeJsIcon from '../../../public/images/svgs/Threejs.svg';
+import TailwindIcon from '../../../public/images/svgs/TailWind.svg';
+import SASSIcon from '../../../public/images/svgs/Sass.svg';
+import StyledComponentsIcon from '../../../public/images/svgs/Styled-Components.svg';
 import ReactQueryIcon from '../../../public/images/svgs/React-Query.svg';
 import ReactHookFormIcon from '../../../public/images/svgs/ReactHookForm.svg';
 import AxiosIcon from '../../../public/images/svgs/Axios.svg';
-// import GitIcon from '../../../public/images/svgs/Git.svg';
+import GitIcon from '../../../public/images/svgs/Git.svg';
 import GitHubIcon from '../../../public/images/svgs/GitHub.svg';
 import VercelIcon from '../../../public/images/svgs/Vercel.svg';
-import { StaticImageData } from 'next/image';
+import NetlifyIcon from '../../../public/images/svgs/NetlifyDark.svg';
 import VscodeIcon from '../../../public/images/svgs/Vscode.svg';
 import LinkIcon from '../../../public/images/svgs/Link.svg';
+import { StaticImageData } from 'next/image';
 
 export const navigationList = [
   { label: 'Home', link: '/', icon: 'home', newTab: false },
@@ -71,6 +75,8 @@ export interface ProjectType {
   }[];
 }
 
+// ----------------------------------------------------------------------
+
 export const projectList: ProjectType[] = [
   {
     id: 0,
@@ -89,8 +95,9 @@ Next.js를 택하고 개발을 진행 했습니다.
       { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
       { id: 1, icon: ReactIcon, alt: 'React Icon' },
       { id: 2, icon: NextJsIcon, alt: 'Next.js Icon' },
-      { id: 3, icon: ThreeJsIcon, alt: 'Three.js Icon' },
-      { id: 4, icon: VercelIcon, alt: 'Vercel Icon' },
+      { id: 3, icon: TailwindIcon, alt: 'TailwindIcon Icon' },
+      { id: 4, icon: ThreeJsIcon, alt: 'Three.js Icon' },
+      { id: 5, icon: VercelIcon, alt: 'Vercel Icon' },
     ],
     links: [
       {
@@ -145,9 +152,10 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
       { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
       { id: 1, icon: ReactIcon, alt: 'React Icon' },
       { id: 2, icon: NextJsIcon, alt: 'Next.js Icon' },
-      { id: 3, icon: ReactHookFormIcon, alt: 'React Hook Form Icon' },
-      { id: 4, icon: AxiosIcon, alt: 'Axios Icon' },
-      { id: 5, icon: VercelIcon, alt: 'Vercel Icon' },
+      { id: 3, icon: TailwindIcon, alt: 'TailwindIcon Icon' },
+      { id: 4, icon: ReactHookFormIcon, alt: 'React Hook Form Icon' },
+      { id: 5, icon: AxiosIcon, alt: 'Axios Icon' },
+      { id: 6, icon: VercelIcon, alt: 'Vercel Icon' },
     ],
     links: [
       {
@@ -182,8 +190,9 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
       { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
       { id: 1, icon: ReactIcon, alt: 'React Icon' },
       { id: 2, icon: NextJsIcon, alt: 'Next.js Icon' },
-      { id: 3, icon: ReactQueryIcon, alt: 'React Query Icon' },
-      { id: 4, icon: VercelIcon, alt: 'Vercel Icon' },
+      { id: 3, icon: TailwindIcon, alt: 'TailwindIcon Icon' },
+      { id: 4, icon: ReactQueryIcon, alt: 'React Query Icon' },
+      { id: 5, icon: VercelIcon, alt: 'Vercel Icon' },
     ],
     links: [
       {
@@ -201,3 +210,34 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     ],
   },
 ];
+
+// ----------------------------------------------------------------------
+
+export const informationList = {
+  info: [
+    {
+      name: '박지원',
+      phone: '010-2411-1644',
+      email: 'jackgg12322@gmail.com',
+      github: 'https://github.com/PJW980921/',
+    },
+  ],
+  skills: [
+    [
+      { id: 0, src: HtmlIcon, alt: 'HtmlIcon' },
+      { id: 1, src: CSSIcon, alt: 'CSSIcon' },
+      { id: 2, src: JavaScriptIcon, alt: 'JavaScriptIcon' },
+      { id: 3, src: TypeScriptIcon, alt: 'TypeScriptIcon' },
+      { id: 4, src: ReactIcon, alt: 'ReactIcon' },
+      { id: 5, src: NextJsIcon, alt: 'NextJsIcon' },
+      { id: 6, src: ReactQueryIcon, alt: 'ReactQueryIcon' },
+      { id: 7, src: SASSIcon, alt: 'SASSIcon' },
+      { id: 8, src: TailwindIcon, alt: 'TailwindIcon' },
+      { id: 9, src: StyledComponentsIcon, alt: 'StyledComponentsIcon' },
+      { id: 10, src: GitHubIcon, alt: 'GitHubIcon' },
+      { id: 11, src: GitIcon, alt: 'GitIcon' },
+      { id: 12, src: VercelIcon, alt: 'VercelIcon' },
+      { id: 13, src: NetlifyIcon, alt: 'NetlifyIcon' },
+    ],
+  ],
+};
