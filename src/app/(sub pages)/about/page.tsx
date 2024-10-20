@@ -17,7 +17,7 @@ export default function About() {
             <Image
               src={CareerHopesImage}
               alt="CareerHopes image"
-              className="w-full h-auto"
+              className="w-[35rem] h-auto"
             />
             저는 초등학생 때 <em>VisualBasic</em>이라는 프로그래밍 툴로
             <br />
