@@ -65,11 +65,11 @@ const ProjectSection = ({ project, title }: ProjectSectionProps) => (
         {title}
       </h3>
       <div className="flex w-[82vw] h-auto sm:h-[37.5vh] gap-8 sm:gap-4 md:gap-6 justify-center items-center sm:flex-col">
-        <div className="flex w-[50%] sm:w-[70%]  h-auto">
+        <div className="flex w-[50%]  sm:w-[70%]  h-auto">
           <Image
             src={project.src}
             alt={project.alt}
-            className="w-full h-[30rem] sm:h-auto md:h-[25rem] border-gray-300 border-solid rounded-[5rem] sm:rounded-[2rem] md:rounded-[4rem] border-[0.1rem]"
+            className="w-[40rem] h-[30rem] sm:h-auto md:h-[25rem] border-gray-300 border-solid rounded-[5rem] sm:rounded-[2rem] md:rounded-[4rem] border-[0.1rem]"
           />
         </div>
         <div className="flex flex-col justify-center sm:w-full sm:text-center">
