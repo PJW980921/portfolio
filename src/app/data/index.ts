@@ -329,12 +329,13 @@ export const informationList = {
     Libraries: [
       { id: 9, src: ReactQueryIcon, alt: 'React\nQueryIcon' },
       { id: 10, src: ReactHookFormIcon, alt: 'ReactHook\nFormIcon' },
+      { id: 11, src: AxiosIcon, alt: 'AxiosIcon' },
     ],
     'CI/CD': [
-      { id: 11, src: GitHubIcon, alt: 'GitHubIcon' },
-      { id: 12, src: GitIcon, alt: 'GitIcon' },
-      { id: 13, src: VercelIcon, alt: 'VercelIcon' },
-      { id: 14, src: NetlifyIcon, alt: 'NetlifyIcon' },
+      { id: 12, src: GitHubIcon, alt: 'GitHubIcon' },
+      { id: 13, src: GitIcon, alt: 'GitIcon' },
+      { id: 14, src: VercelIcon, alt: 'VercelIcon' },
+      { id: 15, src: NetlifyIcon, alt: 'NetlifyIcon' },
     ],
   },
 };
