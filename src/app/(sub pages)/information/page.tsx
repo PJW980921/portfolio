@@ -8,23 +8,7 @@ import {
 } from '@/app/data';
 import Link from 'next/link';
 import BlurFade from '@/app/components/ui/blur-fade';
-
-const SkillIcon = ({ src, alt }: Skill) => {
-  return (
-    <div className="relative group">
-      <Image
-        src={src}
-        alt={alt}
-        className="w-[3rem] h-auto transition-opacity duration-300 group-hover:opacity-50"
-      />
-      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="text-[0.7rem]  font-bmEuljiro text-center ">
-          {alt.replace('Icon', '')}
-        </p>
-      </div>
-    </div>
-  );
-};
+import SkillIcon from '@/app/components/SkillIcon';
 
 const SkillCategory = ({
   category,

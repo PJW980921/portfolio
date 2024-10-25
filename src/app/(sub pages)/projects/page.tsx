@@ -4,16 +4,11 @@ import BlurFade from '@/app/components/ui/blur-fade';
 import { projectList, ProjectType } from '@/app/data';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import TechStack from '@/app/components/TechStack';
 
 interface LinkProps {
   url: string;
   ariaLabel: string;
-  icon: StaticImageData;
-  alt: string;
-}
-
-interface SkillsProps {
-  id: number;
   icon: StaticImageData;
   alt: string;
 }
@@ -33,22 +28,6 @@ const ProjectLinks = ({ links }: { links: LinkProps[] }) => (
       >
         <Image src={link.icon} alt={link.alt} />
       </Link>
-    ))}
-  </div>
-);
-
-const TechStack = ({ skills }: { skills: SkillsProps[] }) => (
-  <div className="flex flex-row gap-3 sm:gap-2 md:gap-3 pb-4  sm:justify-center sm:items-center">
-    <h3 className="flex items-center font-bmEuljiro text-lg sm:text-sm md:text-lg">
-      Tech Stack
-    </h3>
-    {skills.map((skill) => (
-      <Image
-        key={skill.id}
-        src={skill.icon}
-        alt={skill.alt}
-        className="w-[3rem] sm:w-[2rem] md:w-[2.5rem] h-auto"
-      />
     ))}
   </div>
 );
