@@ -257,7 +257,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     alt: 'JiWonPark Project Rolling PlatForm Image',
     skills: [
       { id: 0, icon: ReactIcon, alt: 'React Icon' },
-      { id: 1, icon: StyledComponentsIcon, alt: 'StyledComponents Icon' },
+      { id: 1, icon: StyledComponentsIcon, alt: 'Styled\nComponents Icon' },
       { id: 2, icon: NetlifyIcon, alt: 'Netlify Icon' },
     ],
     links: [

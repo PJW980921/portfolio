@@ -8,7 +8,7 @@ interface SkillIconProps extends Skill {
 
 const SkillIcon = ({ src, alt, size = '3rem' }: SkillIconProps) => {
   return (
-    <div className="relative group flex items-center justify-center">
+    <div className="relative group flex items-center justify-center md:w-[2.5rem] md:h-auto ">
       <Image
         src={src}
         alt={alt}
