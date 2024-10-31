@@ -182,15 +182,15 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     id: 3,
     name: 'EmotionalCore',
     title: '감성코어(EmotionalCore) - 시 및 웹 소설 플랫폼',
-    duration: '2024/10 ~ 진행중',
-    description: `프론트엔드2명, 백엔드3명과 함께 작업중인 플랫폼입니다.
+    duration: '2024/11 ~ 진행중',
+    description: `프론트엔드2명, 백엔드3명, 디자이너1명과 함께 작업중인 플랫폼입니다.
 네이버 블로그를 대체할 웹 커뮤니티를 만들자는 목적과
 프로젝트 경험을 쌓고 발전해 나가고싶은 사람들을 모아서
 서로 지식공유 목적으로 프로젝트를 진행하고 있습니다.
 팀장으로서 적극적인 소통 및 피드백 반영을 하고있으며,
 체계적인 프로젝트 관리를 담당하고 있습니다.
-현재는 디자이너분을 채용중에 있습니다. 
-디자이너분을 컨택 하고나서 디자인 작업이 진행 되면 개발이 진행 될 예정입니다.`,
+현재는 디자이너분을 컨택 후 기획안을 작성 중에 있습니다.
+기획안을 기반으로 작업 진행 될 예정입니다.`,
     src: EmotionalCore,
     alt: 'JiWonPark Project EmotionalCore PlatForm Image',
     skills: [
@@ -210,6 +210,12 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
       },
       {
         url: 'https://github.com/EmotionalCore/frontend',
+        ariaLabel: 'EmotionalCore Github Link',
+        icon: GitHubIcon,
+        alt: 'GitHub Icon',
+      },
+      {
+        url: 'https://github.com/EmotionalCore/frontend/wiki/%EA%B0%90%EC%84%B1%EC%BD%94%EC%96%B4-%EA%B8%B0%ED%9A%8D%EC%95%88-(%EC%9E%91%EC%84%B1-%EC%A4%91)',
         ariaLabel: 'EmotionalCore Github Link',
         icon: GitHubIcon,
         alt: 'GitHub Icon',
