@@ -3,6 +3,7 @@ import PortFolio from '../../../public/images/project-portfolio.png';
 import Taskify from '../../../public/images/project-taskify.png';
 import PjwSippet from '../../../public/images/project-snippet.png';
 import Yumu from '../../../public/images/project-yumu.png';
+import HourlyTodoList from '../../../public/images/project-todo.png';
 import Rolling from '../../../public/images/project-rolling.png';
 import HtmlIcon from '../../../public/images/svgs/HTML.svg';
 import CSSIcon from '../../../public/images/svgs/CSS.svg';
@@ -254,6 +255,41 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
   },
   {
     id: 5,
+    name: 'HourlyTodoList',
+    title: 'HourlyTodoList - 할일목록 Web App',
+    duration: '2024/02 (2주간 진행)',
+    description: `현재 시간에 맞춰 할일 목록 생성을 하는 프로젝트입니다.
+    협업 프로젝트 진행 전 라이브러리 학습 겸 프로젝트를 기획하게 되었습니다.
+    요일/시간별 할일 목록 추가/수정/삭제가 가능하며,
+    기본으로 최신순으로 정렬 되지만, 드래그 기능을 사용하여 할일 목록 순서를 변경할 수 있습니다.
+    `,
+    src: HourlyTodoList,
+    alt: 'JiWonPark Project HourlyTodoList PlatForm Image',
+    skills: [
+      { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
+      { id: 1, icon: ReactIcon, alt: 'React Icon' },
+      { id: 2, icon: NextJsIcon, alt: 'Next.js Icon' },
+      { id: 3, icon: TailwindIcon, alt: 'Tailwind Icon' },
+      { id: 4, icon: ReactHookFormIcon, alt: 'React Hook Form Icon' },
+      { id: 5, icon: VercelIcon, alt: 'Vercel Icon' },
+    ],
+    links: [
+      {
+        url: 'https://hourly-todo-list.vercel.app/',
+        ariaLabel: 'HourlyTodoList Site Link',
+        icon: LinkIcon,
+        alt: 'Link Icon',
+      },
+      {
+        url: 'https://github.com/PJW980921/HourlyTodoList',
+        ariaLabel: 'HourlyTodoList Github Link',
+        icon: GitHubIcon,
+        alt: 'GitHub Icon',
+      },
+    ],
+  },
+  {
+    id: 6,
     name: 'Rolling',
     title: '롤링(Rolling) - 웹 롤링 페이퍼 플랫폼',
     duration: '2023/12 (3주간 진행)',
