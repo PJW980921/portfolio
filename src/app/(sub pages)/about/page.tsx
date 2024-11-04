@@ -4,6 +4,12 @@ import CareerHopesImage from '../../../../public/images/career-hopes.png';
 import CodeReviewImage from '../../../../public/images/code-review.png';
 import SelfieImage from '../../../../public/images/selfie.png';
 import BlurFade from '../../components/ui/blur-fade';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'PJW PortFolio - About',
+  description: '박지원 자기소개 페이지입니다.',
+};
 export default function About() {
   return (
     <main className="h-full flex flex-col justify-center items-center gap-8 bg-white translate-y-12">

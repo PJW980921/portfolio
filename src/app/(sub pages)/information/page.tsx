@@ -9,7 +9,12 @@ import {
 import Link from 'next/link';
 import BlurFade from '@/app/components/ui/blur-fade';
 import SkillIcon from '@/app/components/SkillIcon';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'PJW PortFolio - Information',
+  description: '저(박지원)의 인적사항을 확인 할 수 있는 페이지입니다.',
+};
 const SkillCategory = ({
   category,
   skills,
