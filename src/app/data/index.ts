@@ -146,6 +146,12 @@ Next.js를 택하고 개발을 진행 했습니다.
     ],
     links: [
       {
+        url: 'https://tmr-platform.vercel.app/',
+        ariaLabel: 'TMR Project Repository Web Site',
+        icon: LinkIcon,
+        alt: 'Link Icon',
+      },
+      {
         url: 'https://github.com/PJW980921/tmr',
         ariaLabel: 'TMR Project Repository Github Link',
         icon: GitHubIcon,
