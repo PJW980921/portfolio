@@ -1,6 +1,7 @@
 import EmotionalCore from '../../../public/images/project-emotional-core.png';
 import PortFolio from '../../../public/images/project-portfolio.png';
 import Taskify from '../../../public/images/project-taskify.png';
+import TMR from '../../../public/images/project-tmr.png';
 import PjwSippet from '../../../public/images/project-snippet.png';
 import Yumu from '../../../public/images/project-yumu.png';
 import HourlyTodoList from '../../../public/images/project-todo.png';
@@ -24,6 +25,9 @@ import VercelIcon from '../../../public/images/svgs/Vercel.svg';
 import NetlifyIcon from '../../../public/images/svgs/NetlifyDark.svg';
 import VscodeIcon from '../../../public/images/svgs/Vscode.svg';
 import LinkIcon from '../../../public/images/svgs/Link.svg';
+import NodeJsIcon from '../../../public/images/svgs/NodeJs.svg';
+import PostgreSqlIcon from '../../../public/images/svgs/PostgreSql.svg';
+import ExpressIcon from '../../../public/images/svgs/Express.svg';
 import Profile from '../../../public/images/profile.png';
 import { StaticImageData } from 'next/image';
 
@@ -120,6 +124,37 @@ Next.js를 택하고 개발을 진행 했습니다.
   },
   {
     id: 1,
+    name: 'TMR',
+    title: 'TMR - 음식 메뉴 추천 서비스 플랫폼',
+    duration: '2024/11 ~ 진행중',
+    description: `현재 시간에 맞게 다양한 음식 메뉴 추천을 하는 서비스 플랫폼을 개발 중입니다.
+    각 메뉴를 선택함에 따라 음식 메뉴를 추천 받을 수 있고, 
+    사용자들과 음식 메뉴를 추천하는 서비스 플랫폼입니다.
+    현재는 반응형 사이즈에 맞게 온보딩페이지 및 회원가입 페이지 UI/UX를 구현 중입니다.
+    `,
+    src: TMR,
+    alt: 'JiWonPark Project TMR Image',
+    skills: [
+      { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
+      { id: 1, icon: ReactIcon, alt: 'React Icon' },
+      { id: 2, icon: NextJsIcon, alt: 'Next.js Icon' },
+      { id: 3, icon: ReactQueryIcon, alt: 'ReactQuery Icon' },
+      { id: 4, icon: NodeJsIcon, alt: 'NodeJs Icon' },
+      { id: 5, icon: ExpressIcon, alt: 'Express Icon' },
+      { id: 6, icon: PostgreSqlIcon, alt: 'PostgreSQL Icon' },
+      { id: 7, icon: VercelIcon, alt: 'Vercel Icon' },
+    ],
+    links: [
+      {
+        url: 'https://github.com/PJW980921/tmr',
+        ariaLabel: 'TMR Project Repository Github Link',
+        icon: GitHubIcon,
+        alt: 'GitHub Icon',
+      },
+    ],
+  },
+  {
+    id: 2,
     name: 'pjw-snippets',
     title: 'pjw-snippets - React snippet Extension',
     duration: '2024/07',
@@ -144,7 +179,7 @@ Next.js를 택하고 개발을 진행 했습니다.
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Taskify',
     title: 'Taskify - 모달 기반 일정 관리 플랫폼',
     duration: '2024/01 ~ 2024/02',
@@ -180,7 +215,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: 'EmotionalCore',
     title: '감성코어(EmotionalCore) - 시 및 웹 소설 플랫폼',
     duration: '2024/11 ~ 진행중',
@@ -224,7 +259,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: 'YUMU',
     title: '유무(YUMU) - 예술 작품 경매 플랫폼',
     duration: '2024/02 ~ 2024/04',
@@ -254,7 +289,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: 'HourlyTodoList',
     title: 'HourlyTodoList - 할일목록 Web App',
     duration: '2024/02 (2주간 진행)',
@@ -289,7 +324,7 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Rolling',
     title: '롤링(Rolling) - 웹 롤링 페이퍼 플랫폼',
     duration: '2023/12 (3주간 진행)',
