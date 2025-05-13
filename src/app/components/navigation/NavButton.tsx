@@ -3,7 +3,7 @@ import {
   Folder,
   Github,
   Home,
-  Instagram,
+  MessageSquareHeart,
   Linkedin,
   Info,
   User,
@@ -34,8 +34,8 @@ const getIcon = (icon: string) => {
       return <Github className="w-full h-auto" strokeWidth={1.5} />;
     case 'linkedin':
       return <Linkedin className="w-full h-auto" strokeWidth={1.5} />;
-    case 'instagram':
-      return <Instagram className="w-full h-auto" strokeWidth={1.5} />;
+    case 'guestbook':
+      return <MessageSquareHeart className="w-full h-auto" strokeWidth={1.5} />;
     case 'career':
       return (
         <BriefcaseBusinessIcon className="w-full h-auto" strokeWidth={1.5} />
