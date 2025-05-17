@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { Skill } from '@/app/_data';
+import { SkillProps } from '@/app/_data';
 
-interface SkillIconProps extends Skill {
+interface SkillIconProps extends SkillProps {
   size?: string;
 }
 
