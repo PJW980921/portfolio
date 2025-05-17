@@ -2,9 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import {
   informationList,
-  Skill,
+  SkillProps,
   SkillCategoryType,
-  InformationList,
+  InformationListProps,
 } from '@/app/_data';
 import Link from 'next/link';
 import BlurFade from '@/app/_components/ui/blur-fade';
@@ -20,7 +20,7 @@ const SkillCategory = ({
   skills,
 }: {
   category: string;
-  skills: Skill[];
+  skills: SkillProps[];
 }) => {
   return (
     <div className="mb-4">
@@ -45,7 +45,7 @@ const SkillsSection = ({ skills }: { skills: SkillCategoryType }) => (
 const InformationPage = ({
   informationList,
 }: {
-  informationList: InformationList;
+  informationList: InformationListProps;
 }) => {
   const { info, skills } = informationList;
 
