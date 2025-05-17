@@ -3,28 +3,28 @@ import localFont from 'next/font/local';
 import './globals.css';
 
 const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
+  src: './_fonts/GeistVF.woff',
   variable: '--font-geist-sans',
   weight: '100 900',
 });
 const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
+  src: './_fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
   weight: '100 900',
 });
 
 const bmEuljiro = localFont({
-  src: './fonts/BMEuljiro10yearslaterOTF.woff',
+  src: './_fonts/BMEuljiro10yearslaterOTF.woff',
   display: 'swap',
   variable: '--font-bm-euljiro',
 });
 const bmHannaAir = localFont({
-  src: './fonts/BMHANNAAir_ttf.woff',
+  src: './_fonts/BMHANNAAir_ttf.woff',
   display: 'swap',
   variable: '--font-bm-hanna_air',
 });
 const bmHannaPro = localFont({
-  src: './fonts/BMHANNAPro.woff',
+  src: './_fonts/BMHANNAPro.woff',
   display: 'swap',
   variable: '--font-bm-hanna_pro',
 });

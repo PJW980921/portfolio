@@ -32,7 +32,14 @@ import Profile from '../../../public/images/profile.png';
 import ApexEscLogo from '@/../public/images/apex-logo.svg';
 import { StaticImageData } from 'next/image';
 
-export const navigationList = [
+interface navigationListProps {
+  label: string;
+  link: string;
+  icon: string;
+  newTab: boolean;
+}
+
+export const navigationList: navigationListProps[] = [
   { label: 'Home', link: '/', icon: 'home', newTab: false },
   { label: 'About', link: '/about', icon: 'about', newTab: false },
   { label: 'Projects', link: '/projects', icon: 'projects', newTab: false },
@@ -63,7 +70,7 @@ export const navigationList = [
   },
 ];
 
-export interface ProjectType {
+export interface ProjectProps {
   id: number;
   name: string;
   title: string;
@@ -86,7 +93,7 @@ export interface ProjectType {
 
 // ----------------------------------------------------------------------
 
-export const projectList: ProjectType[] = [
+export const projectList: ProjectProps[] = [
   {
     id: 0,
     name: 'PJW WEB PortFolio',
@@ -363,17 +370,17 @@ Next.js를 학습하는 목적으로 Next.js를 택하고 개발을 진행했습
 
 // ----------------------------------------------------------------------
 
-export interface Skill {
+export interface SkillProps {
   id: number;
   src: string | StaticImageData;
   alt: string;
 }
 
 export type SkillCategoryType = {
-  [key: string]: Skill[];
+  [key: string]: SkillProps[];
 };
 
-export interface InformationList {
+export interface InformationListProps {
   info: {
     id: number;
     profile: { src: string | StaticImageData; alt: string };
@@ -385,7 +392,7 @@ export interface InformationList {
   skills: SkillCategoryType;
 }
 
-export const informationList = {
+export const informationList: InformationListProps = {
   info: [
     {
       id: 0,
@@ -423,7 +430,7 @@ export const informationList = {
     ],
   },
 };
-export interface CareerType {
+export interface CareerProps {
   id: number;
   company: string;
   logo: StaticImageData;
@@ -434,7 +441,7 @@ export interface CareerType {
   subtitle: string[];
 }
 
-export const careerList: CareerType[] = [
+export const careerList: CareerProps[] = [
   {
     id: 0,
     company: '',
@@ -448,5 +455,87 @@ export const careerList: CareerType[] = [
       '클래스/화면/테스트 설계 문서화 (이관) 취합 및 검수 담당',
       '전자정부프레임워크 기반 eGovFrame MVC 설계 및 이관',
     ],
+  },
+];
+
+export interface CardProps {
+  id: number;
+  profile: string;
+  nickname: string;
+  description: string;
+}
+
+export const CardList: CardProps[] = [
+  {
+    id: 0,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 1,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 2,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 3,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 4,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 5,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 6,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 7,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
+  },
+  {
+    id: 8,
+    profile: '👨🏻‍💻',
+    nickname: 'test',
+    description: `asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd`,
   },
 ];

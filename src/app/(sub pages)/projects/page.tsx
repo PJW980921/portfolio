@@ -1,10 +1,10 @@
 import React from 'react';
-import { FullPageScroll } from '@/app/components/FullPageScrollLayout';
-import BlurFade from '@/app/components/ui/blur-fade';
-import { projectList, ProjectType } from '@/app/data';
+import { FullPageScroll } from '@/app/_components/domain/project/FullPageScrollLayout';
+import BlurFade from '@/app/_components/ui/blur-fade';
+import { projectList, ProjectProps } from '@/app/_data';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import TechStack from '@/app/components/TechStack';
+import TechStack from '@/app/_components/domain/project/TechStack';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ const ProjectLinks = ({ links }: { links: LinkProps[] }) => (
 );
 
 interface ProjectSectionProps {
-  project: ProjectType;
+  project: ProjectProps;
   title: string;
 }
 

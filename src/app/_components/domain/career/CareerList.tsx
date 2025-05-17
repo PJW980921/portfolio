@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { careerList } from '../data';
+import { careerList } from '../../../_data';
 
 export default function CareerList() {
   return (

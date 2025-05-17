@@ -1,9 +1,9 @@
-import Ripple from '@/app/components/ui/ripple';
-import Navigation from './components/navigation';
-import RenderModel from './components/RenderModel';
+import Ripple from '@/app/_components/ui/ripple';
+import Navigation from './_components/navigation';
+import RenderModel from './_components/RenderModel';
 import dynamic from 'next/dynamic';
 
-const PjwCharacter = dynamic(() => import('./components/models'), {
+const PjwCharacter = dynamic(() => import('./_components/models'), {
   ssr: false,
 });
 export default function Home() {

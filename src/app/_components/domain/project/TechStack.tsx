@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillIcon from './SkillIcon';
+import SkillIcon from '../information/SkillIcon';
 import { StaticImageData } from 'next/image';
 
 interface SkillsProps {

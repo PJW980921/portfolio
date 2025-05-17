@@ -3,7 +3,7 @@ import React from 'react';
 import CareerHopesImage from '../../../../public/images/career-hopes.png';
 import CodeReviewImage from '../../../../public/images/code-review.png';
 import SelfieImage from '../../../../public/images/selfie.png';
-import BlurFade from '../../components/ui/blur-fade';
+import BlurFade from '../../_components/ui/blur-fade';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

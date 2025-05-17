@@ -1,7 +1,7 @@
 'use client';
 import { ReactNode, useEffect } from 'react';
-import HomeButton from '../components/HomeButton';
-import ChannelService from '../lib/ChannelService';
+import HomeButton from '../_components/HomeButton';
+import ChannelService from '../_lib/ChannelService';
 
 interface SubPagesLayoutProps {
   children: ReactNode;

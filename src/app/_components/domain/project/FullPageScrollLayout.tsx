@@ -2,7 +2,7 @@
 
 import React, { PropsWithChildren, useMemo } from 'react';
 import { Dots } from './SliderDotButtons';
-import { useFullPageScroll } from '../hooks/useFullPageScroll';
+import { useFullPageScroll } from '../../../_hooks/useFullPageScroll';
 
 type FullPageScrollProps = {
   onPageChangeCallback?: (page: number) => void;

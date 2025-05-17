@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
-import BlurFade from '@/app/components/ui/blur-fade';
-import CareerList from '@/app/components/CareerList';
+import BlurFade from '@/app/_components/ui/blur-fade';
+import CareerList from '@/app/_components/domain/career/CareerList';
 
 export const metadata: Metadata = {
   title: 'PJW PortFolio - Career',

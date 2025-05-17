@@ -5,10 +5,10 @@ import {
   Skill,
   SkillCategoryType,
   InformationList,
-} from '@/app/data';
+} from '@/app/_data';
 import Link from 'next/link';
-import BlurFade from '@/app/components/ui/blur-fade';
-import SkillIcon from '@/app/components/SkillIcon';
+import BlurFade from '@/app/_components/ui/blur-fade';
+import SkillIcon from '@/app/_components/domain/information/SkillIcon';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
