@@ -12,7 +12,7 @@ export default function SubPagesLayout({ children }: SubPagesLayoutProps) {
     ChannelService.loadScript();
 
     ChannelService.boot({
-      pluginKey: process.env.NEXT_PUBLIC_CHANNEL_TALK_KEY as string,
+      pluginKey: process.env.CHANNEL_TALK_KEY as string,
     });
   }, []);
   return (
