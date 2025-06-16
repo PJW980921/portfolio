@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@channel.io/channel-web-sdk-loader": "^2.0.0",
     "@react-spring/three": "^9.7.5",
     "@react-three/drei": "^9.114.3",
     "@react-three/fiber": "^8.17.10",
