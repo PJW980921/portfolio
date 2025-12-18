@@ -1,7 +1,7 @@
 import React from 'react';
 import { FullPageScroll } from '@/app/_components/domain/project/FullPageScrollLayout';
 import BlurFade from '@/app/_components/ui/blur-fade';
-import { projectList, ProjectProps } from '@/app/_data';
+import { projectList, ProjectProps } from '@/app/_mock';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import TechStack from '@/app/_components/domain/project/TechStack';
@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'PJW PortFolio - Projects',
   description:
-    '저(박지원)의 현재 개발 중인 프로젝트와 개발 한 프로젝트를 확인 할 수 있는 페이지입니다.',
+    '현재 개발 중인 프로젝트와 개발 한 프로젝트를 확인 할 수 있는 페이지입니다.',
 };
 interface LinkProps {
   url: string;

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Career() {
   return (
     <BlurFade delay={0.25} inView>
-      <div className="relative flex flex-col justify-center w-full">
+      <div className="relative flex flex-col justify-center w-full pt-10">
         <h1 className="font-bmEuljiro  text-[6rem] translate-x-[-8rem] translate-y-[-10rem] sm:text-[3rem]  sm:translate-x-[36%] sm:translate-y-0">
           2025
         </h1>
