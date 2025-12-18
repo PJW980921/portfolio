@@ -1,5 +1,6 @@
 // import EmotionalCore from '../../../public/images/project-emotional-core.png';
 import PortFolio from '../../../public/images/project-portfolio.png';
+import Helpie from '../../../public/images/project-helpie.png';
 import Taskify from '../../../public/images/project-taskify.png';
 // import TMR from '../../../public/images/project-tmr.png';
 import PjwSippet from '../../../public/images/project-snippet.png';
@@ -166,6 +167,43 @@ Next.js를 택하고 개발을 진행 했습니다.
   //     },
   //   ],
   // },
+  {
+    id: 1,
+    name: 'Helpie',
+    title: 'Helpie - 글로벌 커뮤니티 플랫폼',
+    duration: '2025/09 ~ 2025/11',
+    description: `HELPie는 전 세계 해외 생활자들이 서로의 경험과 정보를 나누며,
+     더 쉽고 따뜻하게 정착할 수 있도록 돕는 글로벌 커뮤니티 플랫폼입니다.
+    주요 기능은 소모임 생성 및 관리,소모임 인원들과 실시간 채팅을 이용하실 수 있습니다.
+    프론트엔드2, 백엔드3, 디자이너2, PM 1명과 함께 프로젝트를 진행하였습니다.
+    소통 향상 및 기술 역량 향상을 위해 프로젝트에 참여하게 됐습니다.
+    팀장으로서 적극적인 소통 및 피드백 반영을 하고, 체계적인 프로젝트 관리를 담당했습니다.
+`,
+    src: Helpie,
+    alt: 'JiWonPark Project Helpie PlatForm Image',
+    skills: [
+      { id: 0, icon: TypeScriptIcon, alt: 'TypeScript Icon' },
+      { id: 1, icon: ReactIcon, alt: 'React Icon' },
+      { id: 2, icon: NextJsIcon, alt: 'Next.js Icon' },
+      { id: 3, icon: TailwindIcon, alt: 'Tailwind Icon' },
+      { id: 4, icon: ReactQueryIcon, alt: 'React Query Icon' },
+      { id: 5, icon: VercelIcon, alt: 'Vercel Icon' },
+    ],
+    links: [
+      {
+        url: 'https://helpie-main.vercel.app/',
+        ariaLabel: 'Helpie Site Link',
+        icon: LinkIcon,
+        alt: 'Link Icon',
+      },
+      {
+        url: 'https://github.com/Helpie-Team/helpie-frontend',
+        ariaLabel: 'Helpie Github Link',
+        icon: GitHubIcon,
+        alt: 'GitHub Icon',
+      },
+    ],
+  },
   {
     id: 2,
     name: 'pjw-snippets',
