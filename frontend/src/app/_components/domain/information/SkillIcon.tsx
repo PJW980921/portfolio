@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { SkillProps } from '@/app/_data';
+import { SkillProps } from '@/app/_mock';
 
 interface SkillIconProps extends SkillProps {
   size?: string;

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { careerList } from '../../../_data';
+import { careerList } from '../../../_mock';
 
 export default function CareerList() {
   return (
@@ -27,7 +27,7 @@ export default function CareerList() {
             </div>
           </div>
 
-          <ul className="flex flex-col gap-2 text-base font-bmHannaAir">
+          <ul className="flex flex-col gap-2 text-base font-bmHannaAir justify-center items-center">
             <Link
               href="https://www.csi.go.kr/cmq/main.do"
               target="_blank"
@@ -35,6 +35,7 @@ export default function CareerList() {
             >
               {career.subtitle}
             </Link>
+            <li>{career.date}</li>
             {career.description.map((desc, idx) => (
               <li
                 key={idx}

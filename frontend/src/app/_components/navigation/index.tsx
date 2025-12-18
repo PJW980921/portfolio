@@ -1,7 +1,7 @@
 'use client';
 
 import useScreenSize from '@/app/_hooks/useScreenSize';
-import { navigationList } from '../../_data/index';
+import { navigationList } from '../../_mock/index';
 import NavButton from './NavButton';
 const Navigation = () => {
   const angleIncrement = 360 / navigationList.length;
