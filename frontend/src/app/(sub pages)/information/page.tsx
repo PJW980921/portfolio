@@ -5,7 +5,7 @@ import {
   SkillProps,
   SkillCategoryType,
   InformationListProps,
-} from '@/app/_data';
+} from '@/app/_mock';
 import Link from 'next/link';
 import BlurFade from '@/app/_components/ui/blur-fade';
 import SkillIcon from '@/app/_components/domain/information/SkillIcon';
