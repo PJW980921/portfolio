@@ -493,13 +493,14 @@ export const careerList: CareerProps[] = [
     tag: 'Backend 개발',
     site: 'https://www.apexesc.com/',
     subtitle: ['국토안전관리원 - 건설공사 품질관리 종합정보 시스템'],
-    date:'(2025-03-10 ~ 2025-12-27)',
+    date:'(2025-03-10 ~ 2026-01-15)',
     description: [
       '클래스/화면/테스트 설계 문서화 (이관) 취합 및 검수 담당',
       '전자정부프레임워크 기반 eGovFrame MVC 설계 및 이관',
       'Oracle Procedure -> PostgreSQL 이관',
       '통합 테스트 진행 및 결함 수정',
-      '목록 조회 쿼리 튜닝 7s -> 1s 단축'
+      '목록 조회 쿼리 튜닝 7s -> 1s 단축',
+      '서비스 모니터링 및 오류 대응'
     ],
   },
 ];
