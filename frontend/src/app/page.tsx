@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-between relative">
       <div className="w-full h-screen">
         <Navigation />
-        <RenderModel className="">
+        <RenderModel>
           <PjwCharacter />
         </RenderModel>
         <Ripple />

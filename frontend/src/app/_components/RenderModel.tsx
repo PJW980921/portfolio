@@ -6,7 +6,7 @@ import { ReactNode, Suspense } from 'react';
 
 interface renderModelProps {
   children: ReactNode;
-  className: string;
+  className?: string;
 }
 const RenderModel = ({ children, className }: renderModelProps) => {
   return (
