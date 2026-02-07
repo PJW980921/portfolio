@@ -67,13 +67,15 @@ export const PjwCharacter = React.memo(
         {...props}
         dispose={null}
         ref={modelRef as Ref<THREE.Group<THREE.Object3DEventMap>> | undefined}
+        scale={[1, 1, 1]}
+        position={[0, -1.5, 0]}
       >
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.mesh_0.geometry}
           material={nodes.mesh_0.material}
-          scale={1.832}
+          scale={1}
           onClick={() => handleMouseMove}
         />
       </group>
