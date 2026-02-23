@@ -511,7 +511,7 @@ export const careerList: CareerProps[] = [
         title: "건국대학교 RISE 사업단 - 포털 웹사이트 구축",
         date: "(2026.01.16 ~ 2026.02.06)",
         tag: "프론트엔드 개발",
-        link: "http://15.165.204.253",
+        link: "https://kurise.konkuk.ac.kr",
         description: [
           "React 기반 프론트엔드 프로젝트 초기 디렉토리 구조 및 개발 환경 셋업",
           "공통 UI 컴포넌트 Header / Footer 설계 및 개발",
@@ -519,6 +519,7 @@ export const careerList: CareerProps[] = [
           "SiteMap, 사업단 소개, 멘토 소개, 주관과제 등 주요 페이지 UI/UX 작업",
           "Git 기반 협업 환경에서 Feature 단위 개발 및 PR 병합 경험",
           "디자인 시안 기반 UI 구현 및 사용자 동선 고려한 화면 구성",
+          "SEO 최적화 및 성능 최적화 작업",
         ],
       },
     ],
