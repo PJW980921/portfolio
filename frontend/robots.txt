@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap:https://pjw-portfolio.vercel.app/sitemap.xml

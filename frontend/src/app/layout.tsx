@@ -35,8 +35,10 @@ export const metadata: Metadata = {
   icons: {
     icon: '../../public/favicon.ico',
   },
+  verification: {
+    google: 'LBrhCAHSKqGCdXspcLy9elv4b-N-a83xKv0HUZ_dxas',
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
