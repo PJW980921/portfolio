@@ -29,9 +29,9 @@ const bmHannaPro = localFont({
   variable: '--font-bm-hanna_pro',
 });
 export const metadata: Metadata = {
-  title: 'PJW PortFolio',
+  title: '박지원 포트폴리오',
   description:
-    '프론트엔드 개발자 박지원 포트폴리오입니다. 저를 상세히 표현하기 위한 웹 포트폴리오 입니다. ',
+    '웹 개발자 박지원 포트폴리오입니다. 저를 상세히 표현하기 위한 웹 포트폴리오 입니다. ',
   icons: {
     icon: '../../public/favicon.ico',
   },
